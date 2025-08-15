@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(169, 253, 80);
+      }
+      #card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 700px;
+        width: 55%;
+        background-color: rgba(245, 245, 245, 0.658);
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        border-radius: 10px;
+        padding-top: 30px;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+      #btn {
+        background-color: rgb(169, 253, 80);
+        border-radius: 5px;
+        width: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card">
+      <h1>
+        <i class="fa-solid fa-circle-plus" style="color: rgb(75, 145, 0)"></i>
+        Number Adder
+      </h1>
+      <p>Enter two numbers and click the button to add them together</p>
+      <div id="input">
+        <input
+          type="number"
+          placeholder="Enter number"
+          style="
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+          "
+          id="input1"
+        />
+        <i class="fas fa-plus icon"></i>
+        <input
+          type="number"
+          placeholder="Enter number"
+          style="
+            margin-top: 10px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+          "
+          id="input2"
+        />
+      </div>
+      <button id="btn" style="margin-top: 20px; padding: 10px; font-size: 30px">
+        Add Numbers
+      </button>
+      <p id="results">0</p>
+    </div>
+    <script src="NumberAdder.js"></script>
+  </body>
+</html>
